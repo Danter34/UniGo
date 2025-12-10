@@ -1,4 +1,4 @@
-package com.example.project_unigo;
+package com.example.project_unigo.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,10 +10,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.project_unigo.R;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 

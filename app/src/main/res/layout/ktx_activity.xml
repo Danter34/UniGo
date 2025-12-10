@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBackInfo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ký túc xá"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <View android:layout_width="32dp" android:layout_height="32dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="“Chọn YersinUni – Chọn môi trường để an tâm sinh sống, học tập và trưởng thành.” 
+
+Hiểu được nỗi lo của tân sinh viên khi lần đầu xa nhà, YersinUni dành tặng 200 SUẤT HỌC BỔNG CHỖ Ở MIỄN PHÍ tại Ký túc xá sinh viên của Tỉnh cho 200 sinh viên đầu tiên nhập học giúp các bạn khởi đầu hành trình Đại học thật vững vàng. "
+                    android:textSize="15sp"
+                    android:textColor="#333"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/ky"
+                android:scaleType="centerCrop"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ ký túc xá: Số 2 Nguyễn Hoàng, Phường Lang Biang – Đà Lạt, tỉnh Lâm Đồng, chỉ cách trường vài phút di chuyển. "
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <Button
+                    android:id="@+id/btnlocation"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vị Trí"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#D32F2F"
+                    android:textColor="@color/white"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="@drawable/ktx1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="16dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ktx2"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giảm gánh nặng tài chính, tiết kiệm chi phí thuê trọ;
+Vị trí thuận lợi, môi trường sống lý tưởng với không khí trong lành, mát mẻ;
+Không gian sống trẻ trung, đầy năng lượng giúp sinh viên học cách tự lập và rèn luyện kỹ năng sống;
+Cộng đồng sinh viên gắn kết, gần gũi, hòa đồng;
+Ban Quản lý ký túc xá nhiệt tình, sẵn sàng đồng hành, hỗ trợ sinh viên.  "
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ktx3"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

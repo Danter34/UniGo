@@ -1,4 +1,4 @@
-package com.example.project_unigo;
+package com.example.project_unigo.adapter;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.project_unigo.R;
 import com.example.project_unigo.model.NewsModel;
 
 import java.util.Date;

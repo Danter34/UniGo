@@ -1,4 +1,4 @@
-package com.example.project_unigo;
+package com.example.project_unigo.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
+
+import com.example.project_unigo.R;
 import com.example.project_unigo.model.NotificationModel;
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.NotiViewHolder> {
 

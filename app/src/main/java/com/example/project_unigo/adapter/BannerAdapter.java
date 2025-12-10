@@ -1,4 +1,4 @@
-package com.example.project_unigo;
+package com.example.project_unigo.adapter;
 
 import android.view.View;
 import android.view.ViewGroup;

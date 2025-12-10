@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBackInfo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giới thiệu YersinUni"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <View android:layout_width="32dp" android:layout_height="32dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VỀ YERSINUNI"
+                    android:textColor="#B71C1C"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trường Đại học Yersin Đà Lạt được thành lập ngày 27/12/2004. Những nhà sáng lập chọn tên bác sĩ Alexandre John Emile Yersin làm tên Trường để bày tỏ lòng tôn vinh một nhà bác học người Pháp mà tên tuổi, sự nghiệp đã gắn liền với vùng đất Đông Dương và Việt Nam."
+                    android:textSize="15sp"
+                    android:textColor="#333"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/img_yersin_campus"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GIÁ TRỊ KHÁC BIỆT"
+                android:textColor="#B71C1C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
+
+                <include layout="@layout/item_value_box" android:id="@+id/box_grad_3y"/>
+                <include layout="@layout/item_value_box" android:id="@+id/box_business"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
+
+                <include layout="@layout/item_value_box" android:id="@+id/box_global"/>
+                <include layout="@layout/item_value_box" android:id="@+id/box_happy"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trường Đại học Yersin Đà Lạt"
+                    android:textColor="#B71C1C"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trường Đại học Yersin Đà Lạt xác định sứ mệnh: Đào tạo thế hệ trẻ trở thành những “Công dân toàn cầu”, có khả năng phát huy năng lực sáng tạo, tinh thần khởi nghiệp và có trách nhiệm với xã hội. Chúng tôi kiến tạo môi trường để sinh viên được trải nghiệm môi trường học tập năng động, thực tiễn, gắn liền với nhu cầu của doanh nghiệp; sinh viên tốt nghiệp từ YersinUni sẵn sàng gặt hái thành công và thay đổi tương lai."
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/videoIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Triết lý giáo dục, Mục tiêu đào tạo ASK"
+                    android:textColor="#B71C1C"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trường Đại học Yersin Đà Lạt lựa chọn và áp dụng 4 trụ cột giáo dục của UNESCO: “Học để biết; Học để làm; Học để tồn tại; và Học để chung sống” vào trong hoạt động đào tạo Nhà trường
+
+Nhà trường luôn chú trọng đến việc áp dụng triết lý và phương pháp giáo dục hiện đại theo mô hình A.S.K (A – Attitudes, S – Skills, K – Knowledge); chú trọng đến thái độ, kỹ năng, kiến thức của người học; đào tạo con người toàn diện, hài hòa.
+
+Đặc biệt, Trường chú trọng kỹ năng ngoại ngữ, tăng cường đào tạo kỹ năng của công dân thế kỷ 21; bảo cho sinh viên sau khi tốt nghiệp có được việc làm tốt tại nhiều môi trường khác nhau."
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/tl"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WHY YERSIN UNIVERSITY"
+                    android:textColor="#B71C1C"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YersinUni là điểm đến lý tưởng cho những sinh viên muốn theo đuổi chương trình đào tạo tiên tiến, môi trường năng động và có nhiều cơ hội phát triển bản thân."
+                    android:lineSpacingExtra="4dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="@drawable/why"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFF5F5"
+                android:padding="24dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CON SỐ ẤN TƯỢNG"
+                    android:textColor="#B71C1C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="100%"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            android:textColor="#B71C1C"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Giới thiệu\nviệc làm"
+                            android:gravity="center"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20K+"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            android:textColor="#B71C1C"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sinh viên\ntốt nghiệp"
+                            android:gravity="center"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="96%"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            android:textColor="#B71C1C"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Có việc làm\nngay"
+                            android:gravity="center"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TẦM NHÌN"
+                    android:textColor="#B71C1C"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trở thành trường đại học ứng dụng hàng đầu, đào tạo công dân toàn cầu sẵn sàng cho kỷ nguyên 4.0."
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SỨ MẠNG"
+                    android:textColor="#B71C1C"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đào tạo thế hệ trẻ trở thành những công dân toàn cầu, có khả năng phát huy năng lực sáng tạo, tinh thần khởi nghiệp và trách nhiệm xã hội."
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

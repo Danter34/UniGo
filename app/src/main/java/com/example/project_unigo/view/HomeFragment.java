@@ -1,4 +1,4 @@
-package com.example.project_unigo;
+package com.example.project_unigo.view;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,6 +24,9 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.project_unigo.adapter.BannerAdapter;
+import com.example.project_unigo.adapter.NewsAdapter;
+import com.example.project_unigo.R;
 import com.example.project_unigo.model.NewsModel;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nút Back -->
+        <ImageView
+            android:id="@+id/btnBackDetail"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:padding="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tiêu đề nội quy -->
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên nội quy"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Nội dung tóm tắt -->
+        <TextView
+            android:id="@+id/tvDetailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nội dung tóm tắt ở đây..."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="20dp" />
+
+        <!-- Link xem đầy đủ -->
+        <TextView
+            android:id="@+id/tvDetailLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem đầy đủ nội dung tại đây"
+            android:textColor="#007AFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

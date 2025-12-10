@@ -1,5 +1,6 @@
-package com.example.project_unigo;
+package com.example.project_unigo.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.project_unigo.R;
 
 public class CategoryFragment extends Fragment {
 
@@ -50,7 +53,42 @@ public class CategoryFragment extends Fragment {
 
             // Xử lý click
             itemLayout.setOnClickListener(v -> {
-                Toast.makeText(getContext(), "Chọn: " + rawTitle, Toast.LENGTH_SHORT).show();
+                // Kiểm tra ID để xử lý riêng cho Bản đồ
+                if (includeId == R.id.cat_map) {
+                    Intent intent = new Intent(getActivity(), SchoolMapActivity.class);
+                    startActivity(intent);
+                } else if (includeId == R.id.cat_info_school) {
+                    Intent intent = new Intent(getActivity(), SchoolInfoActivity.class);
+                    startActivity(intent);
+                } else if (includeId == R.id.cat_training) {
+                    Intent intent = new Intent(getActivity(), TrainingProgramActivity.class);
+                    startActivity(intent);
+                    
+                }
+                else if (includeId == R.id.cat_info_dept) {
+                    Intent intent = new Intent(getActivity(), ttkhoa.class);
+                    startActivity(intent);
+
+                }
+                else if (includeId == R.id.cat_rules) {
+                    Intent intent = new Intent(getActivity(), RulesActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (includeId == R.id.cat_housing) {
+                    Intent intent = new Intent(getActivity(), BoardingHouseActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (includeId == R.id.cat_dorm) {
+                    Intent intent = new Intent(getActivity(), KtxActivity.class);
+                    startActivity(intent);
+
+                }else
+                {
+                    // Các mục khác tạm thời show Toast
+                    Toast.makeText(getContext(), "Chọn: " + rawTitle, Toast.LENGTH_SHORT).show();
+                }
             });
         }
     }

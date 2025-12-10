@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#E0E0E0"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBackTraining"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chương trình đào tạo"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <View android:layout_width="32dp" android:layout_height="32dp" />
+    </LinearLayout>
+
+    <!-- TẤT CẢ CUỘN CHUNG -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ẢNH -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/chtdt"
+                android:scaleType="centerCrop" />
+
+            <!-- TEXT INTRO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tại sao chọn Trường Đại học Yersin Đà Lạt"
+                    android:textColor="#B71C1C"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tại YersinUni, sinh viên (SV) sẽ được hòa mình và trải nghiệm môi trường giáo dục năng động, có tính ứng dụng cao; SV tốt nghiệp từ Yersin sẵn sàng gặt hái thành công, thay đổi tương lai. Lựa chọn Trường Đại học Yersin Đà Lạt, bạn đang lựa chọn các ưu thế khác biệt:"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textColor="#123B6E"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="@drawable/n3"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Học kỳ doanh nghiệp"
+                    android:textColor="#B22222"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:src="@drawable/hkdn"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02"
+                    android:textColor="#123B6E"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tay"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03"
+                    android:textColor="#123B6E"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Học kỳ nước ngoài"
+                    android:textColor="#B22222"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:src="@drawable/hkng"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04"
+                    android:textColor="#123B6E"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đổi mới sáng tạo"
+                    android:textColor="#B22222"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đây cũng là một điểm mới hết sức khác biệt của YersinUni. Nhà trường tổ chức nhiều hoạt động hỗ trợ sinh viên khởi nghiệp và đổi mới sáng tạo như: Tổ chức các cuộc thi và đào tạo, hỗ trợ sinh viên khởi nghiệp; triển khai cho sinh viên cùng thực hiện các dự án với thầy cô; tổ chức các cuộc thi đổi mới, sáng tạo giải quyết vấn đề thực tiễn của doanh nghiệp…
+Qua đó, sinh viên có năng lực xử lý các vấn đề thực tiễn và tăng cơ hội có việc làm tốt sau khi tốt nghiệp."
+                    android:layout_marginTop="8dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/dmst"
+                    android:scaleType="centerCrop"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05"
+                    android:textColor="#123B6E"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Happy University"
+                    android:textColor="#B22222"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sinh viên được chăm lo, tạo điều kiện phát triển. Thầy/cô luôn sẵn sàng tư vấn
+Luôn dẫn đầu phong trào SV toàn quốc: Vô địch SV 2012, Á quân SV 2020-2021…
+14 CLB hỗ trợ học tập, rèn luyện
+Top 4 đồng phục đẹp nhất Việt Nam
+Yersin’s Hub: Thủ tục một cửa"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="413dp"
+                    android:src="@drawable/bitch"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06"
+                    android:textColor="#123B6E"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textColor="#B22222"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sinh viên được đào tạo với mục tiêu trở thành “Công dân toàn cầu”
+Tiếng Anh chuẩn B1-B2 châu Âu"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mottram"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CÁC NGÀNH ĐÀO TẠO"
+                android:textColor="#B71C1C"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:background="@color/white" />
+
+            <!-- RECYCLER VIEW CO GIÃN — CUỘN CHUNG -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvMajors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
