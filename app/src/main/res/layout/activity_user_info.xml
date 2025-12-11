@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/red_primary"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp">
+
+    <ImageView
+        android:id="@+id/btnBackInfo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="@color/white"
+        android:src="@drawable/abc_ic_ab_back_material"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Thông tin sinh viên"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar"
+                    android:scaleType="centerCrop"
+                    android:background="#E0E0E0"/> </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvDisplayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang tải..."
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin chung"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView style="@style/LabelStyle" android:text="Họ và tên" />
+            <TextView android:id="@+id/tvFullName" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Mã số sinh viên" />
+            <TextView android:id="@+id/tvMssv" style="@style/ValueBoxStyle" />
+            <TextView style="@style/LabelStyle" android:text="Khoa" />
+            <TextView android:id="@+id/tvDepartment" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Khóa" />
+            <TextView android:id="@+id/tvBatch" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Giới tính" />
+            <TextView android:id="@+id/tvGender" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Ngày sinh" />
+            <TextView android:id="@+id/tvDob" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Số điện thoại" />
+            <TextView android:id="@+id/tvPhone" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Email" />
+            <TextView android:id="@+id/tvEmail" style="@style/ValueBoxStyle" />
+
+            <TextView style="@style/LabelStyle" android:text="Địa chỉ" />
+            <TextView android:id="@+id/tvAddress" style="@style/ValueBoxStyle" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

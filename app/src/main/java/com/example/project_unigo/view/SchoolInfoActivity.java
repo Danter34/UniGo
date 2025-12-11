@@ -3,6 +3,7 @@ package com.example.project_unigo.view;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.VideoView;
 import android.net.Uri;
@@ -25,6 +26,9 @@ public class SchoolInfoActivity extends AppCompatActivity {
         setupBox(R.id.box_business, "Học kỳ doanh nghiệp", "Trải nghiệm thực tế tại doanh nghiệp đối tác.", R.drawable.idea);
         setupBox(R.id.box_global, "Công dân toàn cầu", "Đào tạo kỹ năng, ngoại ngữ chuẩn quốc tế.", R.drawable.cdtc);
         setupBox(R.id.box_happy, "Trường học hạnh phúc", "Môi trường năng động, tôn trọng và yêu thương.", R.drawable.book);
+
+        ScrollView scrollView = findViewById(R.id.scrollViewInfo);
+        scrollView.post(() -> scrollView.scrollTo(0, 0));
     }
     private void setupVideo() {
         VideoView videoView = findViewById(R.id.videoIntro);
@@ -43,9 +47,6 @@ public class SchoolInfoActivity extends AppCompatActivity {
 
             videoView.start();
         });
-
-        // Thêm dòng này để VideoView nhận focus (quan trọng trên một số máy)
-        videoView.requestFocus();
     }
     private void setupBox(int includeId, String title, String desc, int iconRes) {
         View view = findViewById(includeId);

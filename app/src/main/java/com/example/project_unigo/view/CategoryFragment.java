@@ -84,10 +84,14 @@ public class CategoryFragment extends Fragment {
                     Intent intent = new Intent(getActivity(), KtxActivity.class);
                     startActivity(intent);
 
-                }else
-                {
-                    // Các mục khác tạm thời show Toast
-                    Toast.makeText(getContext(), "Chọn: " + rawTitle, Toast.LENGTH_SHORT).show();
+                }
+                else if (includeId == R.id.cat_student_info) {
+                    Intent intent = new Intent(getActivity(), UserInfoActivity.class);
+                    startActivity(intent);
+
+                }else if (includeId == R.id.cat_faq) {
+                    Intent intent = new Intent(getActivity(), QuestionActivity.class);
+                    startActivity(intent);
                 }
             });
         }

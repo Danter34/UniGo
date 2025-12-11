@@ -255,7 +255,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        // QUAN TRỌNG: Hủy đăng ký lắng nghe realtime khi thoát màn hình để tránh leak memory
         if (newsListenerRegistration != null) {
             newsListenerRegistration.remove();
         }

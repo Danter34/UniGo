@@ -20,7 +20,8 @@
         android:background="@drawable/bg_input_rounded"
         android:hint="Tên đăng nhập"
         android:paddingStart="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -35,36 +36,14 @@
             android:hint="Mật khẩu"
             android:inputType="textPassword"
             android:paddingStart="16dp"
-            android:paddingEnd="40dp"/>
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@android:drawable/ic_menu_view"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="12dp"
-            android:contentDescription="Toggle Password"/>
+            android:paddingEnd="40dp"
+            android:textColor="@color/black"/>
     </RelativeLayout>
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:background="#E0E0E0"
-        android:layout_marginBottom="8dp"/>
-    <EditText
-        android:id="@+id/edtCaptcha"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/bg_input_rounded"
-        android:hint="Nhập mã bảo vệ"
-        android:gravity="center"
-        android:layout_marginBottom="24dp"/>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Đăng Nhập"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/white"

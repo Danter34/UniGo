@@ -130,13 +130,12 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@drawable/bg_input_rounded"
-            android:text="Quản lý admin"
+            android:text="Thông tin ứng dụng"
             android:gravity="center_vertical"
             android:drawableStart="@drawable/admin"
             android:drawablePadding="16dp"
             android:paddingStart="16dp"
             android:textColor="@color/black"
-            android:visibility="gone"
             android:layout_marginBottom="16dp"/>
         <TextView
             android:id="@+id/btnLogout"

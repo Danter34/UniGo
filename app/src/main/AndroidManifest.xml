@@ -42,6 +42,11 @@
         <activity android:name=".view.RuleDetailActivity"/>
         <activity android:name=".view.BoardingHouseActivity"/>
         <activity android:name=".view.KtxActivity" />
+        <activity android:name=".view.UserInfoActivity" />
+        <activity android:name=".view.ChangePasswordActivity" />
+        <activity android:name=".view.AboutAppActivity" />
+        <activity android:name=".view.QuestionActivity" />
+
     </application>
 
 </manifest>

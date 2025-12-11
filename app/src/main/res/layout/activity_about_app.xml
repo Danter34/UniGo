@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/red_primary"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBackAbout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:tint="@color/white"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thông tin ứng dụng"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yersin UniGo"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textSize="14sp"
+                android:textColor="#9E9E9E"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phát triển bởi Nhóm 16"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="30dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnContactFacebook"
+                style="@style/SettingItemStyle">
+                <ImageView style="@style/IconStartStyle" android:src="@drawable/fb" /> <TextView style="@style/TextItemStyle" android:text="Liên hệ qua Facebook" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:alpha="0.4"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnContactZalo"
+                style="@style/SettingItemStyle">
+                <ImageView style="@style/IconStartStyle" android:src="@drawable/zalo" /> <TextView style="@style/TextItemStyle" android:text="Liên hệ qua Zalo" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:alpha="0.4"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnContactEmail"
+                style="@style/SettingItemStyle">
+                <ImageView style="@style/IconStartStyle" android:src="@drawable/email" /> <TextView style="@style/TextItemStyle" android:text="Liên hệ qua Email" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:alpha="0.4"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnPrivacyPolicy"
+                style="@style/SettingItemStyle"
+                android:layout_marginTop="20dp"> <ImageView style="@style/IconStartStyle" android:src="@android:drawable/ic_lock_lock" /> <TextView style="@style/TextItemStyle" android:text="Chính sách bảo mật &amp; Pháp lý" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:alpha="0.4"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
