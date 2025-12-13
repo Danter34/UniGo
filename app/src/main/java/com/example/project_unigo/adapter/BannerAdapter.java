@@ -31,7 +31,7 @@ public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.BannerView
     public void onBindViewHolder(@NonNull BannerViewHolder holder, int position) {
         if (imageUrls == null || imageUrls.isEmpty()) return;
 
-        // THAY ĐỔI 1: Dùng phép chia lấy dư để lặp lại vị trí trong list gốc
+        // Dùng phép chia lấy dư để lặp lại vị trí trong list gốc
         int realPosition = position % imageUrls.size();
 
         Glide.with(holder.itemView.getContext())
@@ -41,7 +41,7 @@ public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.BannerView
 
     @Override
     public int getItemCount() {
-        // THAY ĐỔI 2: Trả về số lượng cực lớn để giả lập vô tận
+        //  Trả về số lượng cực lớn để giả lập vô tận
         if (imageUrls != null && !imageUrls.isEmpty()) {
             return Integer.MAX_VALUE;
         }

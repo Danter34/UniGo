@@ -1,12 +1,19 @@
 package com.example.project_unigo.view;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.project_unigo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,9 +24,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // --- 1. ĐĂNG KÝ NHẬN TIN TỪ ADMIN (Quan trọng nhất) ---
+        FirebaseMessaging.getInstance().subscribeToTopic("students")
+                .addOnCompleteListener(task -> {
+                    if (!task.isSuccessful()) {
+                        // Log lỗi nếu cần
+                    }
+                });
+
+        // --- 2. XIN QUYỀN THÔNG BÁO (Android 13+) ---
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+            }
+        }
+
+        // --- Phần code điều hướng cũ của bạn ---
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // Mặc định load HomeFragment
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new HomeFragment()).commit();
         }

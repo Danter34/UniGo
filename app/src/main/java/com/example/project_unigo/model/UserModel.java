@@ -1,17 +1,17 @@
 package com.example.project_unigo.model;
 
 public class UserModel {
-    private String mssv;      // Dùng làm ID đăng nhập
-    private String password;  // Mật khẩu
+    private String mssv;
+    private String password;
     private String fullName;
-    private String role;      // Ví dụ: "sinhvien", "giangvien", "admin"
-    private String department; // Khoa
-    private String batch;     // Khóa (VD: K15, K16)
+    private String role;
+    private String department;
+    private String batch;
     private String email;
     private String phone;
     private String address;
     private String gender;
-    private String dob;       // Ngày tháng năm sinh
+    private String dob;
 
     // Bắt buộc phải có Constructor rỗng cho Firestore
     public UserModel() { }

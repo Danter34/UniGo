@@ -1,13 +1,13 @@
 package com.example.project_unigo.model;
 
-import java.io.Serializable; // Bắt buộc để truyền object qua Intent
+import java.io.Serializable;
 
 public class MajorModel implements Serializable {
     private String name;
-    private String imageUrl; // Ảnh thumbnail ở danh sách
+    private String imageUrl;
 
     // Các trường chi tiết cho trang Detail
-    private String bannerUrl;  // Ảnh banner đầu trang
+    private String bannerUrl;
     private String content1;   // Giới thiệu chung
     private String content2;   // Mục tiêu đào tạo
     private String imageUrl1;  // Ảnh minh họa 1

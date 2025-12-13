@@ -1,6 +1,6 @@
 package com.example.project_unigo.adapter;
 
-import android.content.Intent; // Thêm import Intent
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.project_unigo.R;
 import com.example.project_unigo.model.MajorModel;
-import com.example.project_unigo.view.MajorDetailActivity; // Import Activity mới
+import com.example.project_unigo.view.MajorDetailActivity;
 
 import java.util.List;
 
@@ -45,7 +45,6 @@ public class MajorAdapter extends RecyclerView.Adapter<MajorAdapter.MajorViewHol
                 .error(R.drawable.loading)
                 .into(holder.imgMajor);
 
-        // --- SỬA PHẦN NÀY ---
         holder.itemView.setOnClickListener(v -> {
             // Tạo Intent chuyển sang trang chi tiết
             Intent intent = new Intent(v.getContext(), MajorDetailActivity.class);

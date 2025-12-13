@@ -6,6 +6,21 @@ plugins {
 android {
     namespace = "com.example.project_unigo"
     compileSdk = 36
+    packagingOptions {
+        resources {
+            excludes += setOf(
+                "META-INF/DEPENDENCIES",
+                "META-INF/LICENSE",
+                "META-INF/LICENSE.txt",
+                "META-INF/license.txt",
+                "META-INF/NOTICE",
+                "META-INF/NOTICE.txt",
+                "META-INF/notice.txt",
+                "META-INF/ASL2.0",
+                "META-INF/*.kotlin_module"
+            )
+        }
+    }
 
     defaultConfig {
         applicationId = "com.example.project_unigo"
@@ -52,4 +67,8 @@ dependencies {
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
     implementation ("com.google.android.gms:play-services-location:21.0.1")
+    implementation ("com.google.firebase:firebase-messaging:23.4.0")
+    implementation ("com.google.auth:google-auth-library-oauth2-http:1.19.0")
+    implementation ("com.android.volley:volley:1.2.1")
+    implementation ("com.google.firebase:firebase-firestore:24.10.0")
 }

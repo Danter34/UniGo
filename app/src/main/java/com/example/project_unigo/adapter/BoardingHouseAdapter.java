@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.project_unigo.R;
 import com.example.project_unigo.model.BoardingHouseModel;
-import com.example.project_unigo.view.MapDetailActivity; // Activity bản đồ sắp tạo
+import com.example.project_unigo.view.MapDetailActivity;
 
 import java.util.List;
 
@@ -46,7 +46,7 @@ public class BoardingHouseAdapter extends RecyclerView.Adapter<BoardingHouseAdap
                 .placeholder(R.drawable.loading)
                 .into(holder.imgHouse);
 
-        // --- XỬ LÝ CLICK: CHUYỂN SANG TRANG BẢN ĐỒ IN-APP ---
+        //  CHUYỂN SANG TRANG BẢN ĐỒ IN-APP
         holder.itemView.setOnClickListener(v -> {
             if (house.getLatitude() != null && house.getLongitude() != null) {
                 Intent intent = new Intent(v.getContext(), MapDetailActivity.class);

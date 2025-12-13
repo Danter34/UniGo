@@ -1,9 +1,9 @@
 package com.example.project_unigo.model;
 
 public class CategoryModel {
-    private int id;          // ID để phân biệt
-    private String name;     // Tên danh mục
-    private int iconResId;   // ID ảnh trong drawable (ví dụ: R.drawable.ic_shirt)
+    private int id;
+    private String name;
+    private int iconResId;
 
     public CategoryModel(int id, String name, int iconResId) {
         this.id = id;
